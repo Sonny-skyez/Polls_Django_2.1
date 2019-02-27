@@ -1,6 +1,8 @@
 # Polls
 
-Project still in progress, will be deployed on Heroku soon.
+Project still in progress.
+Polls application can be used to create polls questions and answers, and to vote for those answers.
+Votes are counted and displayed.
 
 ## Built With
 
