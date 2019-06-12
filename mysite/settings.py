@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-from decouple import config
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,7 +27,7 @@ SECRET_KEY = 'nieznamhasla'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['https://polls-application.herokuapp.com/', 'localhost:8000', '127.0.0.1']
 
 
 # Application definition
@@ -122,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILE_DIRS = ['static']
