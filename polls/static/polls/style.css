@@ -36,6 +36,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 8px;
 }
 
 p1 {
@@ -47,4 +48,5 @@ p1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 8px;
 }
