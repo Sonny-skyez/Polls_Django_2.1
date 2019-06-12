@@ -27,8 +27,13 @@ form {
     font-family: 'Arial';
 }
 
-a href {
-    color: White;
-    font-size: 20px;
-    font-family: 'Arial';
+p {
+  font-family: 'Arial';
+  font-size: 20px;
+  background-color: white;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
