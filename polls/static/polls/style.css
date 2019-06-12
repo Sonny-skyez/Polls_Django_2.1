@@ -28,25 +28,37 @@ form {
 }
 
 p {
-  font-family: 'Arial';
-  font-size: 20px;
-  background-color: white;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
+    font-family: 'Arial';
+    font-size: 20px;
+    background-color: white;
+    color: grey;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
 }
 
 p1 {
-  font-family: 'Arial';
-  font-size: 20px;
-  background-color: white;
-  color: grey;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
+    font-family: 'Arial';
+    font-size: 20px;
+    background-color: white;
+    color: grey;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    }
+
+p3 {
+    font-family: 'Arial';
+    font-size: 15px;
+    background-color: white;
+    color: grey;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
 }

@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
+<p3 align=center><a href="{% url 'admin:index' %}">Admin</a></p3>
 
 <h1>Witam w aplikacji Polls! <br/> Oto kilka ankiet:</h1>
 
@@ -13,5 +14,5 @@
     </ul>
 
 {% else %}
-    <p>No polls are available.</p>
+    <p>Nie ma żadnych ankiet!</p>
 {% endif %}
