@@ -29,26 +29,27 @@ form {
 
 p {
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 15px;
     background-color: white;
     color: grey;
-    padding: 14px 25px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 2px;
+    margin-block-end: 1em;
 }
 
 p1 {
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 15px;
     background-color: white;
     color: grey;
-    padding: 14px 25px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 2px;
     }
 
 p3 {
@@ -60,5 +61,5 @@ p3 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 2px;
 }
