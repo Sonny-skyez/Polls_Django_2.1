@@ -27,7 +27,7 @@ SECRET_KEY = 'nieznamhasla'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['https://polls-application.herokuapp.com/', 'localhost:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['polls-application.herokuapp.com', 'localhost:8000', '127.0.0.1']
 
 
 # Application definition
