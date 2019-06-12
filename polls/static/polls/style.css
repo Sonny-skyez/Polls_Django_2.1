@@ -1,7 +1,7 @@
 li a {
     color: White;
     font-size: 20px;
-    font-family: 'Arial'
+    font-family: 'Arial';
 }
 
 
@@ -12,6 +12,17 @@ body {
 
 h1 {
     font-size: 40px;
-    font-family: 'Arial'
-    color: B34545;
+    font-family: 'Arial';
+}
+
+ul {
+    color: White;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+form {
+    color: White;
+    font-size: 20px;
+    font-family: 'Arial';
 }
