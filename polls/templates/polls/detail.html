@@ -1,19 +1,24 @@
-{% load static %}
+{% extends 'polls/base.html' %}
+{% block title %} {{ question.question_text }} {% endblock %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+{% block body %}
 
-<h1>{{ question.question_text }}</h1>
+    <h1>{{ question.question_text }}</h1>
 
-{% if error_message %}<p1><strong>{{ error_message }}</strong></p1><br><br>{% endif %}
+    {% if error_message %}
+        <p1><strong>{{ error_message }}</strong></p1><br><br>
+    {% endif %}
 
-<form action="{% url 'polls:vote' question.id %}" method="post">
-{% csrf_token %}
-{% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-{% endfor %}
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %}
+    {% for choice in question.choice_set.all %}
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
 
-<br>
-<input type="submit" value="Głosuj">
-</form>
-<p><a href="{% url 'polls:index' %}">Powrót</a></p>
+    <br>
+    <input type="submit" value="Głosuj">
+    </form>
+    <p><a href="{% url 'polls:index' %}">Powrót</a></p>
+
+{% endblock %}
