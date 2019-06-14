@@ -11,7 +11,7 @@
         <li><p>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</p></li>
     {% endfor %}
     </ul>
-
+    <br>
     <a class="btn btn-light" href="{% url 'polls:detail' question.id %}">Powrót</a>
     <a class="btn btn-light" href="{% url 'polls:index' %}">Ankiety</a>
 
