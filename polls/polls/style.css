@@ -1,0 +1,62 @@
+li a {
+    color: Grey;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+
+li a:hover {
+    color: black;
+}
+
+
+body {
+    background: grey;
+    padding: 15px;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: 'Arial';
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-family: 'Arial';
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 600px;
+}
+
+
+ul {
+    color: White;
+}
+
+
+li p {
+    color: White;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+
+form {
+    color: White;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+
+p1 {
+    color: Black;
+    font-size: 20px;
+    font-family: 'Arial';
+    background: white;
+}
