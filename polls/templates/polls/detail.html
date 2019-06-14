@@ -13,12 +13,14 @@
     {% csrf_token %}
     {% for choice in question.choice_set.all %}
         <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+        <label class="btn btn-dark htn-lg" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
     {% endfor %}
 
-    <br>
-    <input type="submit" value="Głosuj">
+     <br>
+     <button type="submit" class="btn btn-light">Głosuj</button>
+
+     <a class="btn btn-light" href="{% url 'polls:index' %}">Powrót</a>
+
     </form>
-    <p><a href="{% url 'polls:index' %}">Powrót</a></p>
 
 {% endblock %}

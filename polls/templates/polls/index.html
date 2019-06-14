@@ -11,11 +11,9 @@
     <h1>Witam w aplikacji Polls! <br/> Oto kilka ankiet:</h1>
 
 
-
-
         {% if latest_question_list %}
 
-            <ul class='list-group list-group-flush' style="width: 35rem;">
+            <ul class='list-group' style="width: 35rem;">
             {% for question in latest_question_list %}
                 <li class="list-group-item"><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
             {% endfor %}

@@ -127,4 +127,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILE_DIRS = ['static']
 
-LOGOUT_REDIRECT_URL = '/polls/'
+LOGOUT_REDIRECT_URL = '/polls'
