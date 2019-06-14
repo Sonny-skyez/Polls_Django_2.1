@@ -9,18 +9,16 @@
         <p1><strong>{{ error_message }}</strong></p1><br><br>
     {% endif %}
 
-    <form action="{% url 'polls:vote' question.id %}" method="post">
+    <form action="{% url 'polls:vote' question.id %}" method="post" style="padding-left: 15px">
     {% csrf_token %}
-    {% for choice in question.choice_set.all %}
-        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-        <label class="btn btn-dark htn-lg" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-    {% endfor %}
+        {% for choice in question.choice_set.all %}
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+            <label class="btn btn-dark htn-lg" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+        {% endfor %}
 
-     <br>
-     <button type="submit" class="btn btn-light">Głosuj</button>
-
-     <a class="btn btn-light" href="{% url 'polls:index' %}">Powrót</a>
-
-    </form>
+        <br>
+        <button type="submit" class="btn btn-light"><i class="far fa-check-circle"></i> Głosuj</button>
+        <a class="btn btn-light" href="{% url 'polls:index' %}"><i class="far fa-arrow-alt-circle-left"></i> Powrót</a>
+     </form>
 
 {% endblock %}
