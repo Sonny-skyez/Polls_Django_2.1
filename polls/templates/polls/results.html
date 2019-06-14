@@ -4,14 +4,25 @@
 
 {% block body %}
 
-    <h1>{{ question.question_text }}</h1>
+    <h2>{{ question.question_text }}</h2>
 
-    <ul>
-    {% for choice in question.choice_set.all %}
-        <li><p>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</p></li>
-    {% endfor %}
-    </ul>
-    <br>
+    <table class="table table-hover table-dark" style="width:600px">
+      <thead align="center">
+        <tr>
+          <th scope="col" style="width:60%">Odpowiedzi</th>
+          <th scope="col" style="width:40%">Głosy</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        {% for choice in question.choice_set.all %}
+            <tr>
+              <td>{{ choice.choice_text }}</td>
+              <td>{{ choice.votes }}</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
     <a class="btn btn-light" href="{% url 'polls:detail' question.id %}">Powrót</a>
     <a class="btn btn-light" href="{% url 'polls:index' %}">Ankiety</a>
 
