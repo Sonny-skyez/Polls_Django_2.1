@@ -4,9 +4,11 @@ li a {
     font-family: 'Arial';
 }
 
+
 li a:hover {
     color: black;
 }
+
 
 body {
     background: grey;
@@ -27,34 +29,15 @@ ul {
 }
 
 
+li p {
+    color: Black;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+
 form {
     color: White;
     font-size: 20px;
     font-family: 'Arial';
 }
-
-p {
-    font-family: 'Arial';
-    font-size: 17px;
-    background-color: white;
-    color: grey;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    margin-block-end: 0em;
-}
-
-p1 {
-    font-family: 'Arial';
-    font-size: 17px;
-    background-color: white;
-    color: grey;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    margin-block-end: 0em;
-    }
