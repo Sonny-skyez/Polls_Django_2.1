@@ -4,6 +4,9 @@ li a {
     font-family: 'Arial';
 }
 
+li a:hover {
+    color: black;
+}
 
 body {
     background: grey;
@@ -14,6 +17,7 @@ body {
 h1 {
     font-size: 40px;
     font-family: 'Arial';
+    font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
 }
