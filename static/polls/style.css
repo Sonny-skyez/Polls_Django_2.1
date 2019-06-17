@@ -19,7 +19,6 @@ h1 {
     font-size: 40px;
     color: white;
     font-family: 'Arial';
-    font-weight: bold;
     padding-bottom: 15px;
 }
 
@@ -87,7 +86,6 @@ p1 {
 
 .footer-copyright {
     background-color: #bfbfbf;
-
 }
 
 
