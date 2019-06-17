@@ -5,20 +5,23 @@
 {% block body %}
 
 
-    <h1>Witam w aplikacji Polls! <br/> Oto kilka ankiet:</h1>
+    <div class="container">
+
+        <h1 class="text-center">Witam w aplikacji Polls! <br/>Oto kilka ankiet:</h1>
 
 
-        {% if latest_question_list %}
+            {% if latest_question_list %}
 
-            <ul class='list-group' style="width: 600px;">
-                {% for question in latest_question_list %}
-                    <li class="list-group-item"><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-                {% endfor %}
-            </ul>
+                <ul class='list-group text-center'>
+                    {% for question in latest_question_list %}
+                        <li class="list-group-item"><a href="{% url 'polls:detail' question.id %}">
+                            {{ question.question_text }}</a></li>
+                    {% endfor %}
+                </ul>
 
-        {% else %}
-            <p>Nie ma żadnych ankiet!</p>
-        {% endif %}
+            {% else %}
+                <p>Nie ma żadnych ankiet!</p>
+            {% endif %}
 
     </div>
 

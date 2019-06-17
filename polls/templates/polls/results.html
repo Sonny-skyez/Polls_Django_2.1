@@ -4,28 +4,36 @@
 
 {% block body %}
 
-    <h2>{{ question.question_text }}</h2>
+    <div class="container">
+        <a class="btn btn-light" href="{% url 'admin:index' %}"><i class="fas fa-users-cog"></i> Login</a>
+        <a class="btn btn-dark" target="_blank" rel="noopener noreferrer"
+           href="https://github.com/Sonny-skyez/Polls_Django_2.1"><i class="fab fa-github"></i> Code</a>
+        <a class="btn btn-dark" target="_blank" rel="noopener noreferrer"
+           href="https://www.linkedin.com/in/krzysztof-brymer/"><i class="fab fa-linkedin"></i> LinkedIn</a>
 
-    <table class="table table-hover table-dark" style="width:600px">
-      <thead align="center">
-        <tr>
-          <th scope="col" style="width:60%">Odpowiedzi</th>
-          <th scope="col" style="width:40%">Głosy</th>
-        </tr>
-      </thead>
-      <tbody align="center">
-        {% for choice in question.choice_set.all %}
+
+        <h2>{{ question.question_text }}</h2>
+
+        <table class="table table-hover table-dark" style="width:600px">
+          <thead align="center">
             <tr>
-              <td>{{ choice.choice_text }}</td>
-              <td>{{ choice.votes }}</td>
+              <th scope="col" style="width:60%">Odpowiedzi</th>
+              <th scope="col" style="width:40%">Głosy</th>
             </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+          </thead>
+          <tbody align="center">
+            {% for choice in question.choice_set.all %}
+                <tr>
+                  <td>{{ choice.choice_text }}</td>
+                  <td>{{ choice.votes }}</td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
 
-    <a class="btn btn-light" href="{% url 'polls:detail' question.id %}">
-        <i class="far fa-arrow-alt-circle-left"></i> Powrót</a>
-    <a class="btn btn-light" href="{% url 'polls:index' %}"><i class="fas fa-align-left"></i> Ankiety</a>
-
+        <a class="btn btn-light" href="{% url 'polls:detail' question.id %}">
+            <i class="far fa-arrow-alt-circle-left"></i> Powrót</a>
+        <a class="btn btn-light" href="{% url 'polls:index' %}"><i class="fas fa-align-left"></i> Ankiety</a>
+    </div>
 
 {% endblock %}

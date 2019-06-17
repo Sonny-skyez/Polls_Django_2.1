@@ -1,5 +1,5 @@
 li a {
-    color: Grey;
+    color: #666666;
     font-size: 20px;
     font-family: 'Arial';
 }
@@ -18,9 +18,9 @@ body {
 
 h1 {
     font-size: 40px;
+    color: white;
     font-family: 'Arial';
     font-weight: bold;
-    padding-top: 15px;
     padding-bottom: 15px;
 }
 
@@ -35,15 +35,11 @@ h2 {
 }
 
 
-ul {
-    color: black;
-}
-
-
 li p {
     color: White;
     font-size: 20px;
     font-family: 'Arial';
+    background-color: red;
 }
 
 
@@ -59,4 +55,23 @@ p1 {
     font-size: 20px;
     font-family: 'Arial';
     background: white;
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+
+.buttons {
+    width: 50%%;
+    margin: auto;
+}
+
+
+.list-group {
+    width: 100%;
+    background-color: red;
+    margin: auto;
 }
