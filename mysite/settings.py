@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default = False, cast=bool)
 
 
-ALLOWED_HOSTS = ['polls-application.herokuapp.com', 'localhost:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['polls-application.herokuapp.com', 'localhost:8000', '127.0.0.1' 'sonny-skyez.herokuapp.com']
 
 
 # Application definition
