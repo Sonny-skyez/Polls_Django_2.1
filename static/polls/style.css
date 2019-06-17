@@ -12,7 +12,6 @@ li a:hover {
 
 body {
     background: grey;
-    padding: 15px;
 }
 
 
@@ -51,8 +50,10 @@ p1 {
 
 
 .container {
-    width: 60%;
+    width: 65%;
     margin: auto;
+    padding-top: 15px;
+    margin-bottom: 150px;
 }
 
 
@@ -77,4 +78,14 @@ p1 {
 .table {
     width: 90%;
     margin-bottom: 30px;
+}
+
+
+.page-footer {
+    background-color: #f2f2f2;
+}
+
+
+.footer-copyright {
+    background-color: #bfbfbf;
 }

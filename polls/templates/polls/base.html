@@ -43,7 +43,96 @@
 
     <body>
 
+
+
         {% block body %} {% endblock %}
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase">Aplikacja Polls</h5>
+            <p>Aplikacja służy do tworzenia pytań ankietowych i odpowiedzi oraz liczenia ich, posiada
+                zautomatyzowane testy w Selenium. Prosta w obsłudze, prosta do rozbudowy.
+                Zapraszam do odwiedzenia innych moich projektów.</p>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+
+              <li>
+                <a href="https://github.com/Sonny-skyez/Selenium_test_-_Polls_app" target="_blank"
+                   rel="noopener noreferrer">Testy w Selenium</a>
+              </li>
+              <li>
+                <a href="https://movie-rater-app.herokuapp.com/main/filmy/" target="_blank"
+                   rel="noopener noreferrer">Movie Rater</a>
+              </li>
+              <li>
+                <a href="https://github.com/Sonny-skyez/Py.test_-_Twitter_with_unittests"
+                   target="_blank" rel="noopener noreferrer">Twitter i testy
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Linki</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="{% url 'admin:index' %}">Panel Administracyjny</a>
+              </li>
+              <li>
+                <a href="{% url 'polls:index' %}">Strona główna</a>
+              </li>
+
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://github.com/Sonny-skyez"> Krzysztof Brymer</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
 
     </body>
 </html>
