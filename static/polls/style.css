@@ -35,14 +35,6 @@ h2 {
 }
 
 
-li p {
-    color: White;
-    font-size: 20px;
-    font-family: 'Arial';
-    background-color: red;
-}
-
-
 form {
     color: White;
     font-size: 20px;
@@ -74,4 +66,9 @@ p1 {
     width: 100%;
     background-color: red;
     margin: auto;
+}
+
+
+.list-group-item {
+    background-color: #f2f2f2;
 }
