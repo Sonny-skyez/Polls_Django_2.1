@@ -46,7 +46,7 @@ p1 {
     color: Black;
     font-size: 20px;
     font-family: 'Arial';
-    background: white;
+    background-color: white;
 }
 
 
@@ -71,4 +71,10 @@ p1 {
 
 .list-group-item {
     background-color: #f2f2f2;
+}
+
+
+.table {
+    width: 90%;
+    margin-bottom: 30px;
 }
