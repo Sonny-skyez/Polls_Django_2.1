@@ -10,7 +10,7 @@ You can visit **Admin panel** as a **guest** with:
 
  **Password:**  guestguest
  
- ![](https://im3.ezgif.com/tmp/ezgif-3-896a75b646a8.gif)
+ ![](https://github.com/Sonny-skyez/Polls_Django_2.1/blob/master/static/gif/polls.gif?raw=true)
 
 ## Built With
 
