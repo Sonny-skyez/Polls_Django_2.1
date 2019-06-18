@@ -19,9 +19,12 @@
                             {{ question.question_text }}</a></li>
                     {% endfor %}
                 </ul>
+            <div class="bottom-plus">
+                <a class="fas fa-folder-plus" href="https://polls-application.herokuapp.com/admin/polls/question/add/"></a>
+            </div>
 
             {% else %}
-                <p>Nie ma żadnych ankiet!</p>
+                <p class="no-polls">Nie ma żadnych ankiet!</p>
             {% endif %}
 
     </div>

@@ -68,7 +68,6 @@ p1 {
 
 .list-group {
     width: 100%;
-    background-color: red;
     margin: auto;
 }
 
@@ -133,4 +132,18 @@ a.signature {
 a.signature:hover {
     color: #404040;
     text-decoration: none;
+}
+
+
+p.no-polls {
+    font-size: 20px;
+    color: white;
+}
+
+
+.bottom-plus {
+    display: flex;
+    justify-content:
+    flex-end;
+    margin-top: 3px;
 }
