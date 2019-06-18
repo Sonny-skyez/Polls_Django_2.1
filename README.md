@@ -8,7 +8,7 @@ You can visit **Admin panel** as a **guest** with:
 
 **Login:** guest
 
- **Password:** 
+ **Password:**  guestguest
  
  ![](https://im3.ezgif.com/tmp/ezgif-3-896a75b646a8.gif)
 
