@@ -3,12 +3,6 @@
 Polls is a web aplication fully developed in Django and Python, it can be used to create polls questions and it's answers, it also counts casted votes, and displays them. Application has it's own customized admin page, where logged users can create content for this site.
 Polls has also automated tests, made in Selenium framework and django.test (unittest framework), that tests it's functionalities.
 Project deployed on Heroku server. It uses Decouple library to hide security and debugging settings.
-
-You can visit **Admin panel** as a **guest** with:
-
-**Login:** guest
-
- **Password:**  guestguest
  
  ![](https://github.com/Sonny-skyez/Polls_Django_2.1/blob/master/static/gif/polls.gif?raw=true)
 
